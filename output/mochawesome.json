@@ -1,0 +1,180 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-05-11T14:52:57.433Z",
+    "end": "2022-05-11T14:52:59.786Z",
+    "duration": 2353,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "124f8119-ca17-4b10-82fe-b2ba93568ed8",
+      "title": "",
+      "fullFile": "C:\\Users\\Owner\\VNDLY\\_test.js",
+      "file": "\\_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a894f4d0-4def-4cd8-bf41-2e631239c068",
+          "title": "My First Test",
+          "fullFile": "C:\\Users\\Owner\\VNDLY\\_test.js",
+          "file": "\\_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"My First Test\"",
+              "fullTitle": "My First Test \"before all\" hook: codeceptjs.beforeSuite in \"My First Test\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "727898c7-ba8b-4853-9450-1c410831b92e",
+              "parentUUID": "a894f4d0-4def-4cd8-bf41-2e631239c068",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"My First Test\"",
+              "fullTitle": "My First Test \"before each\" hook: codeceptjs.before in \"My First Test\"",
+              "timedOut": false,
+              "duration": 902,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "a814f365-aac2-46a4-98bb-d351474432fc",
+              "parentUUID": "a894f4d0-4def-4cd8-bf41-2e631239c068",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"My First Test\"",
+              "fullTitle": "My First Test \"after all\" hook: codeceptjs.afterSuite in \"My First Test\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "47334f99-2f95-4fc4-9745-e548f7b3ebca",
+              "parentUUID": "a894f4d0-4def-4cd8-bf41-2e631239c068",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"My First Test\"",
+              "fullTitle": "My First Test \"after each\" hook: finalize codeceptjs in \"My First Test\"",
+              "timedOut": false,
+              "duration": 89,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "a215bab2-4572-4981-96a2-4c8d6083da12",
+              "parentUUID": "a894f4d0-4def-4cd8-bf41-2e631239c068",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Complete a Todo - Active Todo",
+              "fullTitle": "My First Test: Complete a Todo - Active Todo",
+              "timedOut": false,
+              "duration": 1356,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"Complete_a_c6761ba5-459b-4171-a802-dc7a8b4ee96b.failed.png\"",
+              "code": "I }) => {\n  await I.amOnPage('https://qa-challenge.beta.vndly.com/');\n  await  I.see('Todo List');\n  await object.checkcomplete();",
+              "err": {
+                "message": "Error: Element \".//div[@class=\"toast-body\"]\" was not found by text|CSS|XPath",
+                "estack": "Error: Element \".//div[@class=\"toast-body\"]\" was not found by text|CSS|XPath\n    at new ElementNotFound (node_modules\\codeceptjs\\lib\\helper\\errors\\ElementNotFound.js:14:11)\n    at assertElementExists (node_modules\\codeceptjs\\lib\\helper\\WebDriver.js:2827:11)\n    at WebDriver.grabTextFrom (node_modules\\codeceptjs\\lib\\helper\\WebDriver.js:1170:5)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async Object.checkcomplete (Pages.js:24:36)\n    at async Test.<anonymous> (_test.js:8:3)",
+                "diff": null
+              },
+              "uuid": "c6761ba5-459b-4171-a802-dc7a8b4ee96b",
+              "parentUUID": "a894f4d0-4def-4cd8-bf41-2e631239c068",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c6761ba5-459b-4171-a802-dc7a8b4ee96b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1356,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "output"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
